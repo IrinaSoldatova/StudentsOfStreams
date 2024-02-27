@@ -16,4 +16,11 @@ public class Stream implements Iterable<StudentGroup> {
     public Iterator<StudentGroup> iterator() {
         return streamList.iterator();
     }
+
+    @Override
+    public String toString() {
+        return "\n" + "STREAM" + " #" +
+                streamNumber + "\n" +
+                streamList;
+    }
 }
